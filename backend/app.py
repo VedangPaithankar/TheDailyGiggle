@@ -36,6 +36,8 @@ def static_files(path):
     return send_from_directory("../frontend", path)
 
 if __name__ == "__main__":
-    # Get port from environment variable, default to 7000 if not set
+    # Get port from environment variable, default to 7007 if not set
+    # The `deploy.sh` script will set this.
     port = int(os.environ.get('PORT', 7007))
-    app.run(host='192.168.1.51', port=port, debug=True)
+    # Bind to 0.0.0.0 to make the app accessible from outside the container
+    app.run(host='0.0.0.0', port=port, debug=True)
