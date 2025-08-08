@@ -38,4 +38,4 @@ def static_files(path):
 if __name__ == "__main__":
     # Get port from environment variable, default to 7000 if not set
     port = int(os.environ.get('PORT', 7007))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='192.168.1.51', port=port, debug=True)
