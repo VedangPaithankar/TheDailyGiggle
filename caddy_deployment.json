@@ -1,0 +1,30 @@
+{
+  "project_name": "joke-website",
+  "dependencies": [
+    "python3",
+    "python3-pip", 
+    "python3-venv",
+    "net-tools",
+    "jq"
+  ],
+  "frontend": {
+    "git_directory": "frontend",
+    "type": "static",
+    "build_command": "",
+    "start_command": "",
+    "env": {
+      "PORT": "DYNAMIC"
+    }
+  },
+  "backend": {
+    "git_directory": "backend", 
+    "type": "python",
+    "build_command": "pip3 install -r requirements.txt",
+    "start_command": "python3 app.py",
+    "env": {
+      "PORT": "DYNAMIC",
+      "FLASK_APP": "app.py",
+      "FLASK_ENV": "production"
+    }
+  }
+}
