@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Daily Giggle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gotu&family=Shadows+Into+Light&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header>
+            <div class="logo">🃏 The Daily Giggle </div>
+            <div class="search">🔍 SEARCH JOKES</div>
+        </header>
+
+        <div class="container">
+            <!-- Sidebar -->
+            <aside>
+                <h2>📬 Categories</h2>
+                <button class="type-btn active" data-type="random">⭐ Random</button>
+                <div id="joke-types"></div>
+                <h2>⚙️ History</h2>
+                <div id="history"></div>
+            </aside>
+
+            <!-- Main -->
+            <main>
+                <div class="joke-box">
+                    <span id="joke-type" class="tag">Random</span>
+                    <h2 id="setup">Loading joke...</h2>
+                    <p id="punchline"></p>
+                </div>
+                <div class="actions">
+                    <button id="new-joke">🔄 New Joke</button>
+                    <button id="favorite">⭐ Favorite</button>
+                </div>
+                <div class="status-bar">
+                    <span id="total-jokes">📊 Total Jokes: 0</span>
+                    <span id="current-type">🎭 Current Type: Random</span>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

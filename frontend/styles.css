@@ -1,0 +1,119 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #fde68a, #fcd34d);
+}
+
+header .logo {
+  font-family: 'Gotu', sans-serif;
+  font-size: 1.5rem;
+}
+
+header .search {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.joke-box h2 {
+  font-family: 'Gotu', sans-serif;
+  font-weight: bold;
+}
+
+.joke-box p {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.type-btn {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: capitalize;
+}
+
+.status-bar {
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+aside {
+  width: 200px;
+  background: linear-gradient(to bottom, #fbbf24, #f59e0b);
+  padding: 1rem;
+  color: white;
+}
+
+aside h2 {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.type-btn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.type-btn:hover, .type-btn.active {
+  background: white;
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  background: linear-gradient(to bottom right, #5eead4, #22d3ee);
+  padding: 2rem;
+}
+
+.joke-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: #ccfbf1;
+  color: #0d9488;
+  padding: 0.3rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+}
+
+.actions button {
+  background: #14b8a6;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #0d9488;
+}
+
+.status-bar {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
