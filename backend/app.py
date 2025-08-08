@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, send_from_directory
 import requests
+import os
 from flask_cors import CORS
 
 app = Flask(__name__, static_folder="../frontend", template_folder="../frontend")
@@ -35,4 +36,6 @@ def static_files(path):
     return send_from_directory("../frontend", path)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Get port from environment variable, default to 7000 if not set
+    port = int(os.environ.get('PORT', 7007))
+    app.run(host='0.0.0.0', port=port, debug=True)
